@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--main-bg);
+    color: var(--white);
+    padding: 1.5rem;
+}
+
+.container {
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+}
+
+.content h2 {
+    color: var(--white);
+    margin: 1rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.content ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.content p {
+    font-weight: 300;
+    color:hsl(215, 51%, 70%);
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.ethereum {
+    color:hsl(178, 100%, 50%);
+}
+
+.clock {
+    color: var(--soft-blue)
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+}
+
+.container ul li img {
+    margin-right: 0.5rem;
+}
+
+.container .avatar {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.container .avatar img {
+    width: 3rem;
+    border: 2px solid var(--white);
+    border-radius: 30px;
+    margin-right: 1rem;
+}
+
+.container .avatar p span {
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.container .avatar p:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.container .content h2:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.container .wrapper {
+    position: relative;
+}
+
+.container .wrapper div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    background-color: hsl(178, 100%, 50%, 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container .wrapper div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container .wrapper div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+    .container {
+        width: 450px;
+        margin: auto;
+    }
+}
