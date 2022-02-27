@@ -4,12 +4,15 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Table of contents
 
-- [Overview](#overview)
-    Using Basic HTML and CSS to build mobile design and desktop design of the NFT preview card component
-  [The challenge](#the-challenge)
-    Mobile view for different device screen sizes
-  - [Screenshot](#screenshot)
-    ![](./images/Nft-preview-card-screenshot.png)
+[Overview] 
+Using Basic HTML and CSS to build mobile design and desktop design of the NFT preview card component
+
+[The challenge]
+Mobile view for different device screen sizes
+
+[Screenshot]
+![](./images/Nft-preview-card-screenshot.png)
+
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
