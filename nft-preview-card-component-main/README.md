@@ -18,7 +18,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 - [My process](#my-process)
   - [Built with](#built-with)
-    HTML and CSS
+    - HTML and CSS
   - [What I learned](#what-i-learned)
     - Responsive web design
     - CSS positioning
