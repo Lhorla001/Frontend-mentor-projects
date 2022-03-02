@@ -105,6 +105,10 @@ ul {
     position: relative;
 }
 
+.container .wrapper .equilibrium {
+    border-radius: 10px;
+}
+
 .container .wrapper div {
     position: absolute;
     top: 0;
@@ -123,6 +127,7 @@ ul {
 
 .container .wrapper div img {
     position: absolute;
+    border-radius: 100px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
