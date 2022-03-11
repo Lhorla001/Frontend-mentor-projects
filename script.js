@@ -1,6 +1,7 @@
 const projects = [
 	{
 		name: 'nft-preview-card-component-main',
+		name: 'qr-code-component-main',
 	}
 ]
 
