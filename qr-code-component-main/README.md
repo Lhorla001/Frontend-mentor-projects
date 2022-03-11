@@ -32,7 +32,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/nftpreviewcardcomponent-oFOoL3yFP)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/qr-code-component-uwvQj9Gf3)
 
 - Live Site URL: [Add live site URL here](https://frontendmentorprojects.netlify.app/qr-code-component-main/index.html)
 
@@ -42,7 +42,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flex
 
 ## Author
 
