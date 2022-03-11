@@ -31,9 +31,9 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/nftpreviewcardcomponent-oFOoL3yFP)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/nftpreviewcardcomponent-oFOoL3yFP)
 
-- Live Site URL: [Add live site URL here](https://frontendmentorprojects.netlify.app/nft-preview-card-component-main/index.html)
+- Live Site URL: [Netlify](https://frontendmentorprojects.netlify.app/nft-preview-card-component-main/index.html)
 
 ## My process
 
