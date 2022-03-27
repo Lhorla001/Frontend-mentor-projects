@@ -4,27 +4,56 @@ const projects = [
 	},
 	{
 		name: 'qr-code-component-main'
+	},
+	{
+		name: 'order-summary-component-main'
 	}
 ]
 
-const list = document.getElementById('list');
-
-projects.forEach(({ name }, i) => {
-	const listItem = document.createElement('li');
-
+projects.forEach(({ name, external, imageSrc, previewUrl, githubSrc }, i) => {
+	const listItem = document.createElement('li')
+	let imgLink
+	let previewLink
+	let githubLink
+  
+	if (external) {
+	  imgLink = imageSrc
+	  previewLink = previewUrl
+	  githubLink = githubSrc
+	} else {
+	  imgLink = `${name}/design/desktop-design.jpg`
+	  previewLink = `${name}/index.html`
+	  githubLink = `https://github.com/lhorla/Frontend-mentor-projects/tree/main/${name}`
+	}
+  
 	listItem.innerHTML = `
-		<a href="/${name}/index.html">
-			<img src="/${name}/design/desktop-design.jpg" alt="${name}" />
-			<p>${i + 1}. ${formatProjectName(name)}</p>
+		<a href="${previewLink}" target="_blank" rel="noopener noreferrer">
+		  <img src="${imgLink}" alt="${name}" />
+		  <p>${i + 1}. ${formatProjectName(name)}</p>
 		</a>
-	`;
-
-	list.appendChild(listItem);
-});
-
-function formatProjectName(name) {
+		
+		<div class="links-container">
+		  <a href="${previewLink}" class="blue" target="_blank" rel="noopener noreferrer">
+			<i class="fas fa-eye"></i>
+		  </a>
+		  <a href="${githubLink}" class="blue" target="_blank" rel="noopener noreferrer">
+			<i class="fas fa-code"></i>
+		  </a>
+		</div>`
+	list.appendChild(listItem)
+  })
+  
+  const emptyListItem = document.createElement('li')
+  list.appendChild(emptyListItem)
+  list.appendChild(emptyListItem)
+  list.appendChild(emptyListItem)
+  list.appendChild(emptyListItem)
+  list.appendChild(emptyListItem)
+  list.appendChild(emptyListItem)
+  
+  function formatProjectName(name) {
 	return name
-		.split('-')
-		.map(word => word[0].toUpperCase() + word.slice(1))
-		.join(' ');
-}
+	  .split('-')
+	  .map((word) => word[0].toUpperCase() + word.slice(1))
+	  .join(' ')
+  }
