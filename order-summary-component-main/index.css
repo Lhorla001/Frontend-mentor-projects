@@ -49,14 +49,79 @@ body {
 }
 
 .details {
-    color: gray;
+    color: var(--desaturatedblue);
+    font-size: 1.3rem;
 }
 
+.plan-box {
+    background-color: var(--verypaleblue);
+    margin: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
 
+.plan-box .plan {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    text-align: left;
+}
 
+.plan div {
+    margin-left: 20px;
+    font-size: 15px;
+}
 
+.plan div h3 {
+    font-weight: 900;
+}
 
+.plan div p {
+    color: var(--desaturatedblue);
+    margin-top: 4px;
+}
 
+.plan-box a {
+    color: var(--darkblue);
+    font-weight: 700;
+    transition: color .3s ease;
+}
+
+.plan-box a:hover {
+    text-decoration: none;
+    color: var(--brightblue);
+}
+
+a.proceed-button {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: var(--brightblue);
+    padding: 1rem;
+    margin: 2.5rem 1rem;
+    color: var(--verypaleblue);
+    border-radius: 10px;
+    box-shadow: var(--paleblue);
+    font-weight: 700;
+    transition: background-color .4s ease;
+}
+
+a.proceed-button:hover {
+    background-color: var(--desaturatedblue);
+}
+
+a.cancel-button {
+    color: var(--desaturatedblue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a.cancel-button:hover {
+    color: var(--darkblue);
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
@@ -64,4 +129,20 @@ body {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container {
+        max-width: 87%;
+    }
+    .summary {
+        font-size: 23px;
+    }
+    .plan {
+        padding: 12px;
+    }
 }
