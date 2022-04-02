@@ -26,14 +26,14 @@ body {
 }
 
 .container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
     max-width: 450px;
     background: white;
     border-radius: 2rem;
     overflow: hidden;
+    margin-left: 40rem;
+    margin-top: 5rem;
 }
 
 .content {
@@ -137,7 +137,7 @@ a.cancel-button:hover {
         font-size: 14px;
     }
     .container {
-        max-width: 87%;
+        width: 100vh;
     }
     .summary {
         font-size: 23px;
