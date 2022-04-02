@@ -137,7 +137,7 @@ a.cancel-button:hover {
         font-size: 14px;
     }
     .container {
-        width: 100vh;
+        max-width: 87%;
     }
     .summary {
         font-size: 23px;
