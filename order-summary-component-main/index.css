@@ -19,108 +19,118 @@ img {
 body {
     font-family: 'Red Hat Display', sans-serif;
     min-height: 100vh;
+    background-color: var(--paleblue);
+    text-align: center;
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: var(--paleblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    display: grid;
-    place-items: center;
     max-width: 450px;
+    padding-bottom: 20px;
     background: white;
-    border-radius: 2rem;
-    overflow: hidden;
-    margin-left: 40rem;
-    margin-top: 5rem;
-}
-
-.content {
-    padding: 2rem;
-    text-align: center;
-}
-
-.summary {
-    color: var(--darkblue);
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin-bottom: 1rem;
-}
-
-.details {
-    color: var(--desaturatedblue);
-    font-size: 1.3rem;
-}
-
-.plan-box {
-    background-color: var(--verypaleblue);
-    margin: 1rem;
+    margin: 20px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
 }
 
-.plan-box .plan {
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    text-align: left;
+.container img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
-.plan div {
-    margin-left: 20px;
-    font-size: 15px;
+.container p.details {
+    padding: 0 20px;
 }
 
-.plan div h3 {
-    font-weight: 900;
+h1 {
+    margin: 10px 0;
+    color:hsl(223, 47%, 23%)
 }
 
-.plan div p {
+p {
+    font-size: 16px;
+    line-height: 1.6;
     color: var(--desaturatedblue);
-    margin-top: 4px;
 }
 
-.plan-box a {
-    color: var(--darkblue);
-    font-weight: 700;
-    transition: color .3s ease;
+h3 {
+    font-size: 16px;
 }
 
-.plan-box a:hover {
+button {
+    font-family: inherit;
+}
+
+.container .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.change-button {
+    background-color: var(--verypaleblue);
     text-decoration: none;
     color: var(--brightblue);
 }
 
-a.proceed-button {
-    display: block;
-    text-decoration: none;
-    font-size: 1rem;
+.change-button:hover {
+    opacity: 0.8;
+}
+
+.proceed-button {
     background-color: var(--brightblue);
-    padding: 1rem;
-    margin: 2.5rem 1rem;
-    color: var(--verypaleblue);
-    border-radius: 10px;
-    box-shadow: var(--paleblue);
-    font-weight: 700;
-    transition: background-color .4s ease;
+    color: #fff;
+    padding: 10px;
 }
 
-a.proceed-button:hover {
-    background-color: var(--desaturatedblue);
+.proceed-button:hover {
+    opacity: 0.8;
 }
 
-a.cancel-button {
+.cancel-button {
+    background-color: transparent;
     color: var(--desaturatedblue);
-    text-decoration: none;
-    font-weight: 700;
 }
 
-a.cancel-button:hover {
-    color: var(--darkblue);
+.cancel-button:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.container .pricing {
+    margin: 30px auto;
+    background-color: var(--verypaleblue);
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .pricing aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .pricing aside img {
+    margin-right: 10px;
 }
 
 .attribution { 
@@ -135,9 +145,14 @@ a.cancel-button:hover {
     body {
         background-image: url(images/pattern-background-mobile.svg);
         font-size: 14px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
     }
     .container {
-        max-width: 87%;
+     max-width: 100%;
     }
     .summary {
         font-size: 23px;
