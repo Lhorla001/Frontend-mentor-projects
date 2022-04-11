@@ -133,6 +133,10 @@ button {
     margin-right: 10px;
 }
 
+.container .pricing aside.content {
+    margin: 10px;
+} 
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
