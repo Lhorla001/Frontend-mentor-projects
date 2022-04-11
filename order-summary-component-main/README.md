@@ -6,12 +6,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-    To build this order summary card component and get it looking as close to the design as possible.
-  - [Screenshot](#screenshot)
-  
-    ![](./images/order%20screenshot.png)
 
-  - [Links](#links)
+    To build this order summary card component and get it looking as close to the design as possible.
 
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -32,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/order%20screenshot.png)
 
 
 ### Links
