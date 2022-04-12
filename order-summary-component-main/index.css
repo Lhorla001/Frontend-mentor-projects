@@ -65,6 +65,15 @@ h2 {
     font-size: 16px;
 }
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
 .buttons {
     font-family: inherit;
 }
@@ -89,6 +98,7 @@ h2 {
     background-color: var(--verypaleblue);
     text-decoration: none;
     color: var(--brightblue);
+    font-size: 16px;
 }
 
 .change-button:hover {
