@@ -41,7 +41,7 @@ body {
 
 .container img {
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
 .container p.details {
@@ -50,20 +50,22 @@ body {
 
 h1 {
     margin: 10px 0;
-    color:hsl(223, 47%, 23%)
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
 }
 
 p {
     font-size: 16px;
     line-height: 1.6;
     color: var(--desaturatedblue);
+    font-weight: 500;
 }
 
 h2 {
     font-size: 16px;
 }
 
-button {
+.buttons {
     font-family: inherit;
 }
 
@@ -77,7 +79,7 @@ button {
 .btn {
     border: none;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -96,7 +98,12 @@ button {
 .proceed-button {
     background-color: var(--brightblue);
     color: #fff;
-    padding: 10px;
+    padding: 20px;
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    box-shadow: 0px 20px 15px -15px var(--desaturatedblue);
 }
 
 .proceed-button:hover {
@@ -106,6 +113,9 @@ button {
 .cancel-button {
     background-color: transparent;
     color: var(--desaturatedblue);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
 }
 
 .cancel-button:hover {
@@ -116,8 +126,8 @@ button {
     margin: 30px auto;
     background-color: var(--verypaleblue);
     width: 90%;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -149,13 +159,8 @@ button {
     body {
         background-image: url(images/pattern-background-mobile.svg);
         font-size: 14px;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
     }
     .container {
-     max-width: 100%;
+     width: 100%;
     }
 }
