@@ -128,7 +128,7 @@ img {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 375px) {
     body {
         flex-direction: column;
     }
