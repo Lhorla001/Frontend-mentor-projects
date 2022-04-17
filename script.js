@@ -7,6 +7,9 @@ const projects = [
 	},
 	{
 		name: 'order-summary-component-main'
+	},
+	{
+		name: 'stats-preview-card-component-main'
 	}
 ]
 
