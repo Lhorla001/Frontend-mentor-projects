@@ -18,12 +18,12 @@ Users should be able to:
 
 ### Screenshot
 
-<img src=" " width="500px">
+<img src="images/stats-screenshot.png" width="500px">
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Lhorla)
-- Live Site URL: [Live]( )
+- Live Site URL: [Live](https://frontendmentorprojects.netlify.app/stats-preview-card-component-main/index.html)
 
 ### Built with
 
@@ -38,8 +38,6 @@ Users should be able to:
 
 ### Author
 
-- Website - [Titilola Shittu](https://www.your-site.com)
-- Frontend Mentor - [Lhorla]( )
 - Twitter - [Errbodylovslola](https://www.twitter.com/errbodylovslola)
 
 ### Acknowledgments
