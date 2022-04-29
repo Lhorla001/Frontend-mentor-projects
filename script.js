@@ -10,7 +10,10 @@ const projects = [
 	},
 	{
 		name: 'stats-preview-card-component-main'
-	}
+	},
+	{
+		name: '3-column-preview-card-component-main'
+	},
 ]
 
 projects.forEach(({ name, external, imageSrc, previewUrl, githubSrc }, i) => {
