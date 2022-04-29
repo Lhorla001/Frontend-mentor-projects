@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Lhorla)
+- Solution URL: [GitHub](https://github.com/Lhorla/Frontend-mentor-projects/tree/main/stats-preview-card-component-main)
 - Live Site URL: [Live](https://frontendmentorprojects.netlify.app/stats-preview-card-component-main/index.html)
 
 ### Built with

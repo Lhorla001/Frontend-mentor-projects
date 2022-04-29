@@ -18,23 +18,18 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="images/stats-screenshot.png" width="500px">
+<img src="images/column-screenchot.png" width="500px">
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Lhorla)
-- Live Site URL: [Live](https://frontendmentorprojects.netlify.app/stats-preview-card-component-main/index.html)
+- Solution URL: [GitHub](https://github.com/Lhorla/Frontend-mentor-projects/tree/main/3-column-preview-card-component-main)
+- Live Site URL: [Live](https://frontendmentorprojects.netlify.app/3-column-preview-card-component-main/index.html)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS3 styling
 
-
-### What I learned
-<h4>This project made me know more about adding an overlay to background images and responsiveness</h4>
-
-- I struggled with mobile responsiveness, it was a hard nut to crack. I advise you start with mobile first, if you want to take this challenge.
 
 ### Author
 
