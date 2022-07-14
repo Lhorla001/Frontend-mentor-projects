@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    background: url(images/pattern-curve.svg);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tanya {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    padding: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.testimonial {
+    background-image: url(images/pattern-quotes.svg);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.testimonial p {
+    font-weight: 500;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.title .name {
+    font-weight: 700;
+}
+
+.title .position {
+    font-weight: 300;
+    margin: 10px 0 0 20px;
+}
+
+.img-container {
+    background-image: url(images/pattern-bg.svg);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.img-container .image {
+    width: 500px;
+    height: 500px;
+    margin-right: 70px;
+    border-radius: 15px;
+}
+
+.img-container .buttons {
+    position: absolute;
+    right: 400px;
+    bottom: -15px;
+    border-radius: 50px;
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, .2);
+}
+
+.buttons .prev-btn {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.buttons .next-btn {
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} 
+
+@media screen and (max-width: 768px) {
+    .tanya {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .testimonial {
+        background-image: url(images/pattern-quotes.svg);
+        background-position: center bottom;
+        background-size: 20%;
+        background-repeat: no-repeat;
+    }
+
+    .testimonial p {
+        font-weight: 500;
+        font-size: 2.2rem;
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    .title {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    .title .name {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    
+    .title .position {
+        font-weight: 300;
+        font-size: 1.8rem;
+    }
+
+    .img-container .image {
+        width: 300px;
+        height: 300px;
+        margin-right: 70px;
+        border-radius: 15px;
+    }
+
+    .img-container .buttons {
+        position: absolute;
+        right: 160px;
+        bottom: -15px;
+        border-radius: 50px;
+        background-color: white;
+        width: 100px;
+        height: 50px;
+        box-shadow: 1px 8px 10px rgba(0, 0, 0, .2);
+    }
+}
