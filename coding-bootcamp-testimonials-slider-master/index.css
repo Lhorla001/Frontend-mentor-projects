@@ -7,39 +7,28 @@
 body {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(images/pattern-bg.svg), url(images/pattern-quotes.svg), url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-size: 40%, 10%, 40%;
+    background-position: 92% 50%, 30% 30%, bottom left;
 }
 
 .container {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    background: url(images/pattern-curve.svg);
-    background-position: center bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
+    max-width: 1440px;
 }
 
-.tanya {
-    background-color: white;
+.tanya, .john {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 40px;
-    padding: 20px;
+    align-items: center;
 }
 
 .hide {
     display: none;
-}
-
-.testimonial {
-    background-image: url(images/pattern-quotes.svg);
-    background-position: center bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .testimonial p {
@@ -60,10 +49,6 @@ body {
 }
 
 .img-container {
-    background-image: url(images/pattern-bg.svg);
-    background-position: center bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -104,22 +89,26 @@ body {
 } 
 
 @media screen and (max-width: 768px) {
-    .tanya {
+    body {
+        background: url(images/pattern-bg.svg), url(images/pattern-quotes.svg), url(images/pattern-curve.svg);
+        background-repeat: no-repeat;
+        background-size: 70%, 20%, 80%;
+        background-position: 32% 18%, 45% 58%, bottom left;
+    }
+
+    .tanya, .john {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .testimonial {
-        background-image: url(images/pattern-quotes.svg);
-        background-position: center bottom;
-        background-size: 20%;
-        background-repeat: no-repeat;
+    .hide {
+        display: none;
     }
 
     .testimonial p {
         font-weight: 500;
         font-size: 2.2rem;
-        margin-top: 5rem;
+        margin-top: 7rem;
         text-align: center;
     }
 
@@ -158,5 +147,11 @@ body {
         width: 100px;
         height: 50px;
         box-shadow: 1px 8px 10px rgba(0, 0, 0, .2);
+    }
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        margin-top: 3rem;
     }
 }
