@@ -16,6 +16,9 @@ const projects = [
 	}, 
 	{
 		name: 'profile-card-component-main'
+	}, 
+	{
+		name: 'coding-bootcamp-testimonial-slider'
 	}
 ]
 
@@ -50,7 +53,7 @@ projects.forEach(({ name, external, imageSrc, previewUrl, githubSrc }, i) => {
 		  </a>
 		</div>`
 	list.appendChild(listItem)
-  })
+	})
   
   const emptyListItem = document.createElement('li')
   list.appendChild(emptyListItem)
