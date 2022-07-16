@@ -62,6 +62,7 @@ projects.forEach(({ name, external, imageSrc, previewUrl, githubSrc }, i) => {
   list.appendChild(emptyListItem)
   list.appendChild(emptyListItem)
   list.appendChild(emptyListItem)
+  list.appendChild(emptyListItem)
   
   function formatProjectName(name) {
 	return name
