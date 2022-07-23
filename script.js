@@ -18,8 +18,8 @@ const projects = [
 		name: 'profile-card-component-main'
 	}, 
 	{
-		name: 'coding-bootcamp-testimonial-slider-main'
-	},
+		name: 'coding-bootcamp-testimonials-slider-main'
+	}
 ]
 
 projects.forEach(({ name, external, imageSrc, previewUrl, githubSrc }, i) => {
@@ -53,19 +53,20 @@ projects.forEach(({ name, external, imageSrc, previewUrl, githubSrc }, i) => {
 		  </a>
 		</div>`
 	list.appendChild(listItem)
-	})
+})
   
-  const emptyListItem = document.createElement('li')
-  list.appendChild(emptyListItem)
-  list.appendChild(emptyListItem)
-  list.appendChild(emptyListItem)
-  list.appendChild(emptyListItem)
-  list.appendChild(emptyListItem)
-  list.appendChild(emptyListItem)
+const emptyListItem = document.createElement('li')
+list.appendChild(emptyListItem)
+list.appendChild(emptyListItem)
+list.appendChild(emptyListItem)
+list.appendChild(emptyListItem)
+list.appendChild(emptyListItem)
+list.appendChild(emptyListItem)
+list.appendChild(emptyListItem)
   
-  function formatProjectName(name) {
+function formatProjectName(name) {
 	return name
-	  .split('-')
-	  .map((word) => word[0].toUpperCase() + word.slice(1))
-	  .join(' ')
-  }
+	.split('-')
+	.map((word) => word[0].toUpperCase() + word.slice(1))
+	.join(' ')
+}
