@@ -19,7 +19,7 @@ const projects = [
 	}, 
 	{
 		name: 'coding-bootcamp-testimonial-slider'
-	}
+	},
 ]
 
 projects.forEach(({ name, external, imageSrc, previewUrl, githubSrc }, i) => {
